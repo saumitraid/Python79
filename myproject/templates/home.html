@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock %}
+{% block content %}
+    <h1>Home Page</h1>
+    <!-- <ul>
+        <li>Delhi</li>
+        <li>Mumbai</li>
+        <li> Kolkata</li>
+    </ul> -->
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nayan</td>
+                <td>nayan@gmail.com</td>
+                <td>Delhi</td>
+            </tr>
+        </tbody>
+    </table>
+    <img src="{% static 'images/tour-img06.jpg' %}" alt="Tour Image">
+{% endblock %}
